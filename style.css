@@ -18,6 +18,9 @@ body {
 .cell {
     width: calc(800px / 16);
     height: calc(800px / 16);
-    background-color: lightgray;
     /*box-sizing: border-box; */
+}
+
+.hoverState {
+    background-color: black;
 }

@@ -5,3 +5,13 @@ for (let i = 0; i < 16 * 16; i++) {
     cell.classList.add('cell');
     container.appendChild(cell);
 }
+
+
+const cell = document.querySelectorAll('.cell');
+
+cell.forEach(cell => {
+    cell.addEventListener('mouseover', () => {
+        cell.classList.add('hoverState');
+    });
+
+});
