@@ -26,9 +26,14 @@ function resizing() {
             removeCells[0].parentNode.removeChild(removeCells[0]);
         }
 
+        const containerSize = 800;
+        const cellSize = containerSize / resizeVar;
+
         for (let i = 0; i < resizeVar * resizeVar; i++) {
             const cell = document.createElement('div');
             cell.classList.add('cell');
+            cell.style.width = cellSize + 'px';
+            cell.style.height = cellSize + 'px';
             container.appendChild(cell);
         }
 
